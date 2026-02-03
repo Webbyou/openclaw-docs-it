@@ -1,0 +1,70 @@
+# Configurazione Jekyll per GitHub Pages
+title: OpenClaw Documentazione Italiana
+description: Documentazione completa di OpenClaw in italiano
+baseurl: ""
+url: "https://tuousername.github.io"
+
+# Tema
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Impostazioni pagina
+lang: it
+locale: it_IT
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Inizia qui
+    url: /start/
+  - title: Gateway
+    url: /gateway/
+  - title: Canali
+    url: /channels/
+  - title: Concetti
+    url: /concepts/
+  - title: Strumenti
+    url: /tools/
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "doc"
+      
+# SEO
+author: "OpenClaw Italia"
+email: "tuaemail@example.com"
+twitter_username: ""
+github_username: "tuousername"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Esclusioni
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - STATUS.md
