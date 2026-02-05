@@ -68,17 +68,23 @@ exclude:
   - vendor/ruby/
   - README.md
   - STATUS.md
-# Configurazione CSP corretta
-csp:
-  enabled: true
-  script-src: 'self' 'unsafe-inline' 'unsafe-eval'
-  style-src: 'self' 'unsafe-inline'
-  img-src: 'self' data: https: http:
-  font-src: 'self'
-  connect-src: 'self'
-  frame-src: 'self'
-  font-src: 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com
-  connect-src: 'self' https: http:
-  frame-src: 'self'
-  object-src: 'none'
-  base-uri: 'self'
+# Configurazione base
+author: OpenClaw Italia
+email: webbyou@example.com
+twitter_username: ''
+github_username: webbyou
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+# Esclusioni
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - STATUS.md
